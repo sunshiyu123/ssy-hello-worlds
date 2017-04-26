@@ -4,17 +4,17 @@ public class Kingfa{
 	static King[] kk = new King[100];
 	static int i=0;
 	public static void main(String args[]){
-		System.out.println("ÍõÕßÈÙÒ«ÏÖÔÚÓĞ"+King.numbers+"¸öÓ¢ĞÛ");
+		System.out.println("ç‹è€…è£è€€ç°åœ¨æœ‰"+King.numbers+"ä¸ªè‹±é›„");
 		menu();
 	}
 	public static void menu(){
-		System.out.println("Çë¸ù¾İÒÔÏÂÌáÊ¾½øĞĞ²Ù×÷");
+		System.out.println("è¯·æ ¹æ®ä»¥ä¸‹æç¤ºè¿›è¡Œæ“ä½œ");
 		System.out.println("--------------");
-		System.out.println("1.ÊäÈëÓ¢ĞÛĞÅÏ¢");
-		System.out.println("2.É¾³ıÓ¢ĞÛĞÅÏ¢");
-		System.out.println("3.²éÑ¯Ó¢ĞÛĞÅÏ¢");
-		System.out.println("4.ĞŞ¸ÄÓ¢ĞÛĞÅÏ¢");
-		System.out.println("5.ÍË³ö²Ù×÷½çÃæ");
+		System.out.println("1.è¾“å…¥è‹±é›„ä¿¡æ¯");
+		System.out.println("2.åˆ é™¤è‹±é›„ä¿¡æ¯");
+		System.out.println("3.æŸ¥è¯¢è‹±é›„ä¿¡æ¯");
+		System.out.println("4.ä¿®æ”¹è‹±é›„ä¿¡æ¯");
+		System.out.println("5.é€€å‡ºæ“ä½œç•Œé¢");
 		System.out.println("--------------");
 		int cz = sc.nextInt();
 		switch(cz){
@@ -34,7 +34,7 @@ public class Kingfa{
 				System.exit(0);
 			break;
 			default:
-				System.out.println("ÊäÈëÓĞÎó£¬·µ»Ø²Ëµ¥");
+				System.out.println("è¾“å…¥æœ‰è¯¯ï¼Œè¿”å›èœå•");
 			menu();
 		}
 	}
@@ -42,24 +42,24 @@ public class Kingfa{
 		
 		boolean is = true;
 		while(is){
-			System.out.println("ÄãÕıÔÚÂ¼ÈëµÚ"+(i+1)+"Ó¢ĞÛĞÅÏ¢");
-			System.out.print("ÇëÊäÈëÓ¢ĞÛÃû³Æ");
+			System.out.println("ä½ æ­£åœ¨å½•å…¥ç¬¬"+(i+1)+"è‹±é›„ä¿¡æ¯");
+			System.out.print("è¯·è¾“å…¥è‹±é›„åç§°");
 			String name = sc.next();
-			System.out.print("ÇëÊäÈëÓ¢ĞÛ¼Û¸ñ");
+			System.out.print("è¯·è¾“å…¥è‹±é›„ä»·æ ¼");
 			int price = sc.nextInt();
-			System.out.print("ÇëÊäÈëÓ¢ĞÛÆ¤·ô");
+			System.out.print("è¯·è¾“å…¥è‹±é›„çš®è‚¤");
 			String skin = sc.next();
-			System.out.print("ÇëÊäÈëÆ¤·ô¼Û¸ñ");
+			System.out.print("è¯·è¾“å…¥çš®è‚¤ä»·æ ¼");
 			int pfprice = sc.nextInt();
-			System.out.print("ÇëÊäÈëÓ¢ĞÛÌ¨´Ê");
+			System.out.print("è¯·è¾“å…¥è‹±é›„å°è¯");
 			String line = sc.next();
-			System.out.print("ÊäÈë³É¹¦");
+			System.out.print("è¾“å…¥æˆåŠŸ");
 			King fangfa = new King(name,price,skin,pfprice,line);
 			kk[i] = fangfa;
 			i++;
-			System.out.println("Ìí¼Ó³É¹¦,ÊÇ·ñ¼ÌĞøÌí¼Ó");
-			System.out.println("1.¼ÌĞøÌí¼Ó");
-			System.out.println("2.·µ»Ø²Ëµ¥");
+			System.out.println("æ·»åŠ æˆåŠŸ,æ˜¯å¦ç»§ç»­æ·»åŠ ");
+			System.out.println("1.ç»§ç»­æ·»åŠ ");
+			System.out.println("2.è¿”å›èœå•");
 			int cz = sc.nextInt();
 			if(cz == 1){
 				is = true;
@@ -70,9 +70,9 @@ public class Kingfa{
 		menu();
 	}
 	public static void deleteKingfa(){
-		System.out.print("ÇëÑ¡ÔñÒªÉ¾³ıµÄÓ¢ĞÛĞÅÏ¢");
-		System.out.print("  1.É¾³ıÈ«²¿");
-		System.out.print("  2.Ö¸¶¨É¾³ı");
+		System.out.print("è¯·é€‰æ‹©è¦åˆ é™¤çš„è‹±é›„ä¿¡æ¯");
+		System.out.print("  1.åˆ é™¤å…¨éƒ¨");
+		System.out.print("  2.æŒ‡å®šåˆ é™¤");
 		int s = sc.nextInt();
 		if(s == 1){
 			for(int i=0;i<kk.length;i++){
@@ -90,7 +90,7 @@ public class Kingfa{
 				}
 			}
 		}
-		System.out.println("É¾³ıÍê³É£¬ÊÇ·ñ·µ»Ø: 1.·µ»Ø 2.¼ÌĞøÉ¾³ı");
+		System.out.println("åˆ é™¤å®Œæˆï¼Œæ˜¯å¦è¿”å›: 1.è¿”å› 2.ç»§ç»­åˆ é™¤");
 			int sq = sc.nextInt();
 		if(sq==1){
 			menu();
@@ -99,9 +99,9 @@ public class Kingfa{
 		}
 	}
 	public static void selectKingfa(){
-		System.out.println("ÇëÑ¡ÔñÄãµÄ²éÑ¯·½·¨");
-		System.out.println("1.È«²¿²éÑ¯");
-		System.out.println("2.¾«È·²éÑ¯");
+		System.out.println("è¯·é€‰æ‹©ä½ çš„æŸ¥è¯¢æ–¹æ³•");
+		System.out.println("1.å…¨éƒ¨æŸ¥è¯¢");
+		System.out.println("2.ç²¾ç¡®æŸ¥è¯¢");
 		int f = sc.nextInt();
 		if(f == 1){
 			for(int i=0;i<100;i++){
@@ -111,7 +111,7 @@ public class Kingfa{
 			}
 		}
 		if(f == 2){
-			System.out.println("ÇëÊäÈëÒª²éÑ¯µÄÓ¢ĞÛÃû³Æ");
+			System.out.println("è¯·è¾“å…¥è¦æŸ¥è¯¢çš„è‹±é›„åç§°");
 			String mz = sc.next();
 			for(King k:kk){
 				if(k!=null && k.name.equals(mz)){
@@ -120,29 +120,29 @@ public class Kingfa{
 			}
 		}
 		if(f != 1 && f != 2){
-			System.out.println("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë");
+			System.out.println("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥");
 			selectKingfa();
 		}
 		menu();
 	}
 	public static void updateKingfa(){
-		System.out.println("ÇëÊäÈëÒª¸üĞÂµÄÓ¢ĞÛĞÕÃû");
+		System.out.println("è¯·è¾“å…¥è¦æ›´æ–°çš„è‹±é›„å§“å");
 			String mz = sc.next();
 			for(int i=0;i<kk.length;i++){
 				if(kk[i]!= null && kk[i].name.equals(mz)){
-					System.out.println("ÇëÊäÈë¸üĞÂºóÓ¢ĞÛĞÅÏ¢");
+					System.out.println("è¯·è¾“å…¥æ›´æ–°åè‹±é›„ä¿¡æ¯");
 					kk[i].name = sc.next();
-					System.out.println("ÇëÊäÈë¸üĞÂºóÓ¢ĞÛ¼Û¸ñ");
+					System.out.println("è¯·è¾“å…¥æ›´æ–°åè‹±é›„ä»·æ ¼");
 					kk[i].price = sc.nextInt();
-					System.out.println("ÇëÊäÈë¸üĞÂºóÓ¢ĞÛÆ¤·ô");
+					System.out.println("è¯·è¾“å…¥æ›´æ–°åè‹±é›„çš®è‚¤");
 					kk[i].skin = sc.next();
-					System.out.println("ÇëÊäÈë¸üĞÂºóÆ¤·ô¼Û¸ñ");
+					System.out.println("è¯·è¾“å…¥æ›´æ–°åçš®è‚¤ä»·æ ¼");
 					kk[i].pfprice = sc.nextInt();
-					System.out.println("ÇëÊäÈë¸üĞÂºóÓ¢ĞÛÌ¨´Ê");
+					System.out.println("è¯·è¾“å…¥æ›´æ–°åè‹±é›„å°è¯");
 					kk[i].line = sc.next();
 				}
 			}
-			System.out.println("¸üĞÂÍê³É£¬ÊÇ·ñ·µ»Ø: 1.·µ»Ø 2.¼ÌĞø¸üĞÂ");
+			System.out.println("æ›´æ–°å®Œæˆï¼Œæ˜¯å¦è¿”å›: 1.è¿”å› 2.ç»§ç»­æ›´æ–°");
 			int z = sc.nextInt();
 		if(z==1){
 			menu();
