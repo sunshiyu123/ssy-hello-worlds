@@ -13,7 +13,7 @@ public class King{
 		this.line = line;
 	}
 	public void say(){
-		System.out.println("Ó¢ĞÛÃû³Æ:"+name+" ¼Û¸ñ:"+price+"½ğ±Ò"+" Æ¤·ô:"+skin+" ¼Û¸ñ:"+pfprice+"µãÈ¯"+" Ì¨´ÊÊÇ:"+line);
+		System.out.println("è‹±é›„åç§°:"+name+" ä»·æ ¼:"+price+"é‡‘å¸"+" çš®è‚¤:"+skin+" ä»·æ ¼:"+pfprice+"ç‚¹åˆ¸"+" å°è¯æ˜¯:"+line);
 	}
 }
 	
